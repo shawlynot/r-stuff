@@ -1,0 +1,5 @@
+input <- read.table("input/day1.txt", col.names = (c("left", "right")))
+left <- sort(input$left)
+right <- sort(input$right)
+distance <- abs(left - right)
+print(sum(distance))
